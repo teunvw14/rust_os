@@ -124,7 +124,7 @@ pub fn write_stuff() {
         buffer: unsafe { &mut *(0xb8000 as *mut Buffer) },
     };
 
-    for i in 1..100 {
+    for _ in 1..100 {
         write!(w, "The numbers are {} and {}.\n", 42, 1.0/3.0).unwrap();
     }
 }
